@@ -27,12 +27,8 @@ class RedirectTo404
         return $next($request);
     }
 
-    // Define your authorization logic here
     private function isAuthorized($request)
     {
-        // Implement your authorization logic based on the request or user roles
-        // For example, check user roles or route names here
-
         // Return true if authorized, false otherwise
         return true; // Change this to your actual authorization logic
     }

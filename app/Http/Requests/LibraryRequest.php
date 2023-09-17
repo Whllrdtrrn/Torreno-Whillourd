@@ -14,7 +14,7 @@ class LibraryRequest extends RequestManager
     {
         $id = $this->route('id')?:0;
         $rules = [
-            'title' => "required|unique:banner,title,{$id}",
+            'title' => "required|unique:books,title,{$id}",
             'description' => "required",
             'author' => "required",
         ];
