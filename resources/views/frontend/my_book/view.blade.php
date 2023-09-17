@@ -23,6 +23,7 @@
     }
     .view__card{
         display: flex;
+        flex-direction: column;
         align-items: center;
 
     }
@@ -43,7 +44,7 @@
 @stop
 @section('content')
 <div class="section__view">
-    <div class="container">
+    <div class="container-md">
         <div class="view__card">
             <div class="view__img">
                 <img src="{{asset('uploads/images/book/'.$book->image_filename)}}" alt="">
@@ -53,7 +54,7 @@
                     <h1 class="title__view oswald-font-700"><span class="oswald-font-500 capitalize">{{ $book->title }}</span> </h1>
                     <h4 class="author__view oswald-font-600"><span class="oswald-font-500 capitalize">{{ $book->author }}</span>  </h4>
                 </div>
-                <p class="view__paragraph oswald-font-300 mt-5">
+                <p class="view__paragraph oswald-font-300 mt-5 mb-5">
                     {{ $book->description }}
                 </p>
             </div>

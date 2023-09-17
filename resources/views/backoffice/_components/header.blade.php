@@ -34,7 +34,7 @@
                 <div class="subscription-menu">
                    <ul>
                       <li>
-                         <a class="dropdown-item" href="#">Profile</a>
+                         <a class="dropdown-item d-none" href="#">Profile</a>
                       </li>
                     
                    </ul>
